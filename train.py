@@ -48,7 +48,6 @@ model.summary()
 # Entrenar el modelo
 history = model.fit(yw_train, yt_train, epochs=100, validation_data=(yw_test, yt_test))
 
-
 # Evaluar el modelo
 loss = model.evaluate(yw_test, yt_test)
 print(f'Validation loss: {loss}')
@@ -66,5 +65,6 @@ plt.xlabel('Índice de Tiempo')
 plt.ylabel('Valor')
 plt.savefig('predicciones.png')
 plt.show()
+
 
 
