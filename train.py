@@ -8,7 +8,7 @@ import random as rd
 import matplotlib.pyplot as plt
 
 # Cargar los datos
-datos_combinadosAJAHUEL_H1 = pd.read_csv('data.csv') 
+datos_combinadosAJAHUEL_H1 = pd.read_csv('data.csv')
 y3 = datos_combinadosAJAHUEL_H1['X3'].values
 
 # Preparar los datos
@@ -46,7 +46,8 @@ model.compile(optimizer='adam', loss='mse')
 model.summary()
 
 # Entrenar el modelo
-history = model.fit(yw_train, yt_train, epochs=15, validation_data=(yw_test, yt_test))
+history = model.fit(yw_train, yt_train, epochs=100, validation_data=(yw_test, yt_test))
+
 
 # Evaluar el modelo
 loss = model.evaluate(yw_test, yt_test)
@@ -65,3 +66,5 @@ plt.xlabel('Índice de Tiempo')
 plt.ylabel('Valor')
 plt.savefig('predicciones.png')
 plt.show()
+
+
