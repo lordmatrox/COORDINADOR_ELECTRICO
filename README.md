@@ -7,7 +7,7 @@ Este proyecto utiliza una red LSTM para predecir valores basados en datos histó
 
 - `train.py`: Script de entrenamiento del modelo.
 - `requirements.txt`: Lista de dependencias del proyecto.
-- `data.csv`: Archivo de datos utilizado para el entrenamiento.
+- `data.csv`: Archiov de datos utilizado para el entrenamiento.a
 - `cml.yaml`: Archivo de configuración de CML para ejecutar el workflow.
 
 ## Ejecución
